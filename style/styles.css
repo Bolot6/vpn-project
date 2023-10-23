@@ -1,0 +1,359 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'rubik';
+}
+
+.container {
+    max-width: 1150px;
+    margin: 0, auto;
+    padding: 15px;
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    padding: 45px 0;
+}
+
+.nav {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+}
+
+.nav-link {
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+}
+
+.nav-link:hover {
+    transform: scale3d(1.5, 1.5, 1.5);
+}
+
+.nav-link::before {
+    position: absolute;
+    content: "";
+    bottom: -7px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    transition: 0.6s;
+}
+
+.nav-hover:hover::before {
+    width: 100%;
+}
+
+.nav-link::after {
+    position: absolute;
+    content: "";
+    bottom: -15px;
+    left: 50%;
+    right: 50%;
+    width: 0;
+    height: 1px;
+    background-color: red;
+    transition: 0.6s;
+    transform: translate(-50%, 0);
+}
+
+.nav-hover:hover::after {
+    width: 70%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.btn-wrapper button:nth-child(1) {
+    background: none;
+    border: none;
+    margin: 0 40px;
+}
+
+.btn-wrapper button:nth-child(2) {
+    border-radius: 40px;
+    padding: 10px, 40px;
+    width: 100px;
+    height: 30px;
+    color: red;
+    background-color: red;
+    background: none;
+    border-color: red;
+}
+
+.title {
+    color: black;
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+.desc {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.button-wrapper {
+    margin: 45px 0;
+    border-radius: 10px;
+    color: white;
+    background: red;
+    background-color: red;
+    padding: 20px 50px;
+    box-shadow: 0 33px 34px 0 rgba(34, 60, 80, 0.2);
+}
+
+.text-holder-wrapper {
+    display: flex;
+    gap: 35px;
+}
+
+.main-btn {
+    width: 250px;
+    width: fixed;
+    height: 60px;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+}
+
+.hero {
+    padding: 40px 0;
+}
+
+.numbers-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    height: 100px;
+    margin: 5% 0;
+}
+
+.vertical-lines {
+    border-left: solid #e3e1e1 2px;
+    border-right: solid #e3e1e1 2px;
+}
+
+.shadow {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 30px 32px -10px rgba(13, 16, 37, 0.06);
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    padding: 50px 0;
+    margin-bottom: 50px;
+}
+
+
+li {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 10px 0;
+    
+}
+
+.bullet-points {
+    margin-top: 7%;
+}
+
+.bullet-points h2 {
+    padding: 15px 0;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.bullet-points p {
+    padding: 15px 0;
+}
+
+.plan h2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.plan p {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    text-align: center;
+}
+
+.box-plan {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #DDDDDD;
+    border-radius: 10px;
+    height: 760px;
+    margin: 20px;
+    padding: 80px 0 50px;
+}
+
+.box-plan:hover {
+    border: solid red 1px;
+    background-color: #fff;
+    transition: 0.4s;
+
+}
+
+.box-plan button {
+    color: red;
+    background-color: #fff;
+    border: solid red 2px;
+    border-radius: 25px;
+    padding: 10px 45px
+}
+
+.box-plan button:hover {
+    color: #fff;
+    background-color: red;
+    transition: 0.4s;
+}
+
+.card {
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.name h5 {
+    color: grey;
+    font-weight: 200;
+}
+
+.rating {
+    display: flex;
+    padding-left: 25px;
+}
+
+.review p {
+    text-align: left;
+    padding: 10px;
+    gap: 10px;
+}
+
+.card:hover {
+    border: solid red 2px;
+    background-color: #fff;
+    transition: 0.4s;
+}
+
+.row-paging {
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn {
+    background-color: #fff;
+    border-radius: 100%;
+    border: solid red;
+    padding: 5px;
+    color: red;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: red;
+    transition: 0.4s;
+}
+
+.btn:hover path {
+    fill: #ffffff;
+    transition: 0.4s;
+}
+
+.subscribe .wrapper {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    padding: 5% 5%;
+    margin-bottom: -10%;
+    border-radius: 10px;
+    background-color: #fff;
+
+}
+
+footer {
+    background-color: #f5f5f5;
+    padding-top: 10%;
+}
+
+footer .col-4 {
+    gap: 20px;
+}
+
+footer h4 {
+    padding-bottom: 25px;
+}
+
+footer a {
+    color: grey;
+}
+
+footer a:hover {
+    color: red;
+    background-color: white;
+    transition: 0.4s;
+}
+
+footer p {
+    padding: 20px 0;
+    color: gray;
+}
